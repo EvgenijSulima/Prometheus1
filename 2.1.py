@@ -1,10 +1,8 @@
 import sys
 import math
-a=float(sys.argv[1])
-b=float (sys.argv[2])
-x=math.sqrt(a*b)/(math.exp(a)*b)+(a*math.exp(2*a/b))
-print x
+x=float(sys.argv[1])
+mu=float(sys.argv[2])
+sig=float(sys.argv[3])
+f=1/sig/math.sqrt(2*math.pi)*math.exp(-1*(x-mu)**2/2/sig**2)
+print f
 
-y = math.sqrt(a*b)/(math.exp(a)*b)+(a*math.exp(2*a/b))
-print "y="
-print y
